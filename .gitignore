@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+__pycache__/
+.ipynb_checkpoints/
+*.ipynb
+*.csv
+*.parquet
+*.pkl
+*.pickle
+*.joblib
+*.pem
+data/
+models/
+private/
