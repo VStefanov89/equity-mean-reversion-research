@@ -1,0 +1,340 @@
+{
+  "audited_on": "2026-10-31",
+  "scope": "Read-only audit of saved artifacts, not a fresh strategy rerun",
+  "weekly_screen": {
+    "source": "Find_triplets_on_weekly_basis.ipynb",
+    "snapshot_label": "2026-09-19",
+    "instruments": 478,
+    "possible_unordered_triplets": 18088476,
+    "pairs_evaluated": 114003,
+    "rejected_correlation_below_0_7": 97811,
+    "rejected_abs_zscore_below_1_8": 15110,
+    "selected_pairs": 1082,
+    "error_lines": 0,
+    "triplet_candidate_rows": 515032,
+    "lookback_rows": 250,
+    "workers_configured": 10
+  },
+  "research_coverage": {
+    "annual_candidate_file_years": [
+      2000,
+      2001,
+      2002,
+      2003,
+      2004,
+      2005,
+      2006,
+      2007,
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025
+    ],
+    "additional_candidate_snapshot": "2026-05-28",
+    "annual_validation_notebooks": [
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "ml_triplet_selection_rows": 529400,
+    "ml_unique_unordered_triplets": 529359,
+    "ml_triplet_rows_by_year": {
+      "2000": 11482,
+      "2001": 47178,
+      "2002": 2020,
+      "2004": 402,
+      "2009": 12965,
+      "2010": 1662,
+      "2012": 4691,
+      "2014": 800,
+      "2015": 800,
+      "2016": 5600,
+      "2017": 8800,
+      "2018": 4200,
+      "2019": 14600,
+      "2020": 13800,
+      "2021": 131000,
+      "2022": 64400,
+      "2023": 63800,
+      "2024": 22000,
+      "2025": 118200,
+      "2026": 1000
+    },
+    "before_entry_rows_sum": 4544198,
+    "intrade_rows_sum": 2299419,
+    "row_sum_caveat": "Overlapping annual files; sums are not deduplicated observations or independent trades."
+  },
+  "parquet_metadata": [
+    {
+      "file": "daily_signals.parquet",
+      "rows": 111639,
+      "columns": 435,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2026-05-29 00:00:00",
+      "date_max": "2026-05-29 00:00:00"
+    },
+    {
+      "file": "triplets_for_ml.parquet",
+      "rows": 529400,
+      "columns": 15,
+      "date_columns": [
+        "year"
+      ],
+      "year_min": "2000",
+      "year_max": "2026"
+    },
+    {
+      "file": "Daily_signals/model_signals_trained.parquet",
+      "rows": 300662,
+      "columns": 361,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "1998-06-30 00:00:00",
+      "date_max": "2026-03-02 00:00:00"
+    },
+    {
+      "file": "Daily_signals/triplets_to_use_2026-09-19.parquet",
+      "rows": 515032,
+      "columns": 3,
+      "date_columns": []
+    },
+    {
+      "file": "Historical_signals/before_entry_signals.parquet",
+      "rows": 672435,
+      "columns": 7,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2019-07-05 00:00:00",
+      "date_max": "2020-12-31 00:00:00"
+    },
+    {
+      "file": "Historical_signals/before_entry_signals_2021.parquet",
+      "rows": 654980,
+      "columns": 7,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2020-07-07 00:00:00",
+      "date_max": "2021-12-31 00:00:00"
+    },
+    {
+      "file": "Historical_signals/before_entry_signals_2022.parquet",
+      "rows": 652396,
+      "columns": 7,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2021-07-07 00:00:00",
+      "date_max": "2022-12-29 00:00:00"
+    },
+    {
+      "file": "Historical_signals/before_entry_signals_2023.parquet",
+      "rows": 644111,
+      "columns": 7,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2022-07-06 00:00:00",
+      "date_max": "2023-12-28 00:00:00"
+    },
+    {
+      "file": "Historical_signals/before_entry_signals_2024.parquet",
+      "rows": 646860,
+      "columns": 7,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2023-07-06 00:00:00",
+      "date_max": "2024-12-31 00:00:00"
+    },
+    {
+      "file": "Historical_signals/before_entry_signals_2025.parquet",
+      "rows": 651300,
+      "columns": 7,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2024-07-09 00:00:00",
+      "date_max": "2025-12-31 00:00:00"
+    },
+    {
+      "file": "Historical_signals/before_entry_signals_2026.parquet",
+      "rows": 622116,
+      "columns": 7,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2025-07-08 00:00:00",
+      "date_max": "2026-06-04 00:00:00"
+    },
+    {
+      "file": "Historical_signals/intrade_signals.parquet",
+      "rows": 353278,
+      "columns": 368,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2020-01-02 00:00:00",
+      "date_max": "2021-03-30 00:00:00"
+    },
+    {
+      "file": "Historical_signals/intrade_signals_2021.parquet",
+      "rows": 353730,
+      "columns": 368,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2021-01-04 00:00:00",
+      "date_max": "2022-03-29 00:00:00"
+    },
+    {
+      "file": "Historical_signals/intrade_signals_2022.parquet",
+      "rows": 354057,
+      "columns": 368,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2022-01-03 00:00:00",
+      "date_max": "2023-03-28 00:00:00"
+    },
+    {
+      "file": "Historical_signals/intrade_signals_2023.parquet",
+      "rows": 347114,
+      "columns": 368,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2023-01-03 00:00:00",
+      "date_max": "2024-03-26 00:00:00"
+    },
+    {
+      "file": "Historical_signals/intrade_signals_2024.parquet",
+      "rows": 354457,
+      "columns": 368,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2024-01-03 00:00:00",
+      "date_max": "2025-03-31 00:00:00"
+    },
+    {
+      "file": "Historical_signals/intrade_signals_2025.parquet",
+      "rows": 343278,
+      "columns": 368,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2025-01-06 00:00:00",
+      "date_max": "2026-03-30 00:00:00"
+    },
+    {
+      "file": "Historical_signals/intrade_signals_2026.parquet",
+      "rows": 193505,
+      "columns": 368,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2026-01-05 00:00:00",
+      "date_max": "2026-06-04 00:00:00"
+    },
+    {
+      "file": "Historical_signals/signals_2020_pass.parquet",
+      "rows": 3000,
+      "columns": 366,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2020-01-02 00:00:00",
+      "date_max": "2020-12-31 00:00:00"
+    },
+    {
+      "file": "Historical_signals/signals_2021_pass.parquet",
+      "rows": 3000,
+      "columns": 366,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2021-01-04 00:00:00",
+      "date_max": "2021-12-31 00:00:00"
+    },
+    {
+      "file": "Historical_signals/signals_2022_pass.parquet",
+      "rows": 3000,
+      "columns": 366,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2022-01-03 00:00:00",
+      "date_max": "2022-12-29 00:00:00"
+    },
+    {
+      "file": "Historical_signals/signals_2023_pass.parquet",
+      "rows": 3000,
+      "columns": 366,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2023-01-03 00:00:00",
+      "date_max": "2023-12-28 00:00:00"
+    },
+    {
+      "file": "Historical_signals/signals_2024_pass.parquet",
+      "rows": 3000,
+      "columns": 366,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2024-01-02 00:00:00",
+      "date_max": "2024-12-31 00:00:00"
+    },
+    {
+      "file": "Historical_signals/signals_2025_pass.parquet",
+      "rows": 3000,
+      "columns": 366,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2025-01-03 00:00:00",
+      "date_max": "2025-12-31 00:00:00"
+    },
+    {
+      "file": "Historical_signals/signals_2026_pass.parquet",
+      "rows": 3000,
+      "columns": 366,
+      "date_columns": [
+        "date"
+      ],
+      "date_min": "2026-01-02 00:00:00",
+      "date_max": "2026-06-04 00:00:00"
+    }
+  ],
+  "source_sha256": {
+    "Find_triplets_on_weekly_basis.ipynb": "9a29eacd3d15988711c5b038503472702cdcaeaa66eb72068a58def5e8a8c0d3",
+    "Generate_triplets.ipynb": "f1c707b3664348a50755b2db949cf6479800a57f3b78067eca92b66b93546f78",
+    "utils_for_daily.py": "8cca2465c40549de7b962e2d6273b839cff327e44679a5588acc1f69ea40db69",
+    "utils_backtest_v2.py": "d3a2609804c95618bd1ef3a690ef685e6a48f4d39e89f8cc66c0e04eaebdfb56",
+    "utils_portfolio_construction.py": "022d3e9deeb753bc5ea3af5cc35eab52c14bb1494fa2852360852ff15824d4f0"
+  }
+}
